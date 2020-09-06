@@ -1,0 +1,57 @@
+/* Regras CSS em um arquivo à parte*/
+/*Seletor por tipo*/
+p{
+    background-color:lightgray;
+    font-family:Arial, sans-serif;
+    font-size: 125%; 
+    text-align: justify;
+    margin-left: 20px;
+}
+/*Seletores por classe*/
+.subtitulo-curso{
+    text-align: center;
+    border: thin 5px;
+    background-color:darkblue; 
+
+}
+.curso{
+    display: inline;    
+    background-color:blue; 
+}
+/*Seletor por id*/
+#titulo {    
+    border: thin 5px; 
+    background-color:darkblue;        
+}
+/*Seletor descendente*/
+article p{
+    font-size: 150%; 
+}
+/*Seletor filho*/
+article > h2{
+    border: solid 3px;
+}
+/*Seletor que agrupa classe id e tipo*/
+.subtitulo-curso, #titulo, footer{
+    border-style:dashed;
+    border-radius: .5%  ;
+}
+#titulo, .subtitulo-curso{
+    font-family:Arial, sans-serif;
+    font-size: 200%; 
+}
+.rodape{
+    text-align: center;
+    padding: .5%;
+    left: 0;
+    bottom: 0;
+    width: 90;
+    position: relative;
+}
+/*Media Query*/
+@media(min-width: 1500px){
+    p{
+    display: inline-block;
+    width: 100%;
+    }
+}
